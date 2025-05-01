@@ -1,15 +1,13 @@
-# config.py
+import os
 
-BOT_TOKEN = "7620831538:AAHDF4rvhKK1sLkhUF_2xlmoYy1r0tQxIPs"
-ADMIN_IDS = [5231298684]  # ضع هنا معرف الأدمن (ID) أو أكثر
+BOT_TOKEN = os.getenv("7620831538:AAHDF4rvhKK1sLkhUF_2xlmoYy1r0tQxIPs")  # التوكن الخاص بالبوت
+ADMIN_ID = int(os.getenv("5231298684"))  # معرف الأدمن
+BINANCE_API_KEY = os.getenv("BINANCE_API_KEY")  # مفتاح Binance Pay
+BINANCE_API_SECRET = os.getenv("BINANCE_API_SECRET")
+BINANCE_MERCHANT_ID = os.getenv("BINANCE_MERCHANT_ID")
 
-BINANCE_PAY_INSTRUCTIONS = """
-للدفع عبر Binance Pay:
-- افتح تطبيق Binance
-- اذهب إلى Binance Pay
-- امسح كود الدفع أو أدخل Pay ID
-- بعد الدفع اضغط على تأكيد.
-"""
+LANGUAGES = ["en", "ar", "fr"]  # اللغات المدعومة
+DEFAULT_LANGUAGE = "en"  # اللغة الافتراضية
 
-LANGUAGES = ["ar", "en"]
-DEFAULT_LANGUAGE = "ar"
+DATA_FOLDER = "data"
+LOCALES_FOLDER = "locales"
