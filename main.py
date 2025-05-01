@@ -1,6 +1,6 @@
 import json import os from aiogram import Bot, Dispatcher, executor, types from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton from aiogram.dispatcher.filters import Command from aiogram.contrib.fsm_storage.memory import MemoryStorage from aiogram.dispatcher import FSMContext from aiogram.dispatcher.filters.state import State, StatesGroup
 
-TOKEN = "PUT_YOUR_BOT_TOKEN_HERE" ADMIN_ID = 5231298684  # استبدل بالآيدي الخاص بك
+TOKEN = "7620831538:AAHDF4rvhKK1sLkhUF_2xlmoYy1r0tQxIPs" ADMIN_ID = 5231298684  # استبدل بالآيدي الخاص بك
 
 bot = Bot(token=TOKEN) dp = Dispatcher(bot, storage=MemoryStorage())
 
